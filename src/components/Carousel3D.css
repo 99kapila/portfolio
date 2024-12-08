@@ -1,0 +1,95 @@
+.slick-slide > div {
+	margin-inline: 15px;
+}
+
+.slick-slide {
+	pointer-events: none;
+	opacity: 0.5;
+	transition: opacity 0.3s ease-in-out;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.slick-center {
+	pointer-events: auto;
+	opacity: 1;
+}
+
+.slick-active {
+	opacity: 1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+	.slick-slide > div {
+		margin-inline: 10px;
+	}
+}
+
+@media (max-width: 768px) {
+	.slick-slide > div {
+		margin-inline: 5px;
+	}
+}
+
+/* Slick Navigation Buttons */
+.slick-prev,
+.slick-next {
+	width: 40px;
+	height: 40px;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: white;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: background-color 0.3s ease-in-out;
+	z-index: 10;
+}
+
+/* Hover Effect */
+.slick-prev:hover,
+.slick-next:hover {
+	background-color: rgba(255, 165, 0, 0.8); /* Dark orange */
+}
+
+/* Positioning */
+.slick-prev {
+	left: -40px; /* Adjust based on design */
+}
+
+.slick-next {
+	right: -40px; /* Adjust based on design */
+}
+
+/* Responsive Adjustments for Buttons */
+@media (max-width: 900px) {
+	.slick-prev,
+	.slick-next {
+		width: 35px;
+		height: 35px;
+		left: -30px; /* Adjust positioning for smaller screens */
+		right: -30px; /* Adjust positioning for smaller screens */
+	}
+}
+
+@media (max-width: 768px) {
+	.slick-prev,
+	.slick-next {
+		width: 30px;
+		height: 30px;
+		left: -20px; /* Adjust positioning for smaller screens */
+		right: -20px; /* Adjust positioning for smaller screens */
+	}
+}
+
+@media (max-width: 480px) {
+	.slick-prev,
+	.slick-next {
+		width: 28px;
+		height: 28px;
+		left: -10px; /* Adjust positioning for smaller screens */
+		right: -10px; /* Adjust positioning for smaller screens */
+	}
+}
