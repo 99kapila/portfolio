@@ -4,12 +4,14 @@ const workData = [
 		title: "RBC",
 		company: "RBC",
 		position: "Full Stack Developer Co-op",
-		date: "Sept 2024 - Dec 2024",
+		date: "Sept 2024 - Dec 2024, Jan 2024 - Apr 2024",
 		description: [
-			"Developed and optimized a microservices-based fraud detection system using Django and React, enabling real-time identification and prevention of fraudulent activities.",
-			"Designed a dynamic dashboard application in Django and Vue, visualizing over 200+ entities for enhanced incident monitoring, boosting efficiency by 30%.",
-			"Collaborated with senior engineers and product management following best practices for the full software development life cycle, including coding standards, code reviews, source control management, build processes, testing, and operations.",
+			"Architected and implemented a microservices-based fraud detection system using Django and React enabling real-time identification and prevention of fraudulent activities.",
+			"Designed and developed a dynamic dashboard application using Django and Vue, visualizing over 19 unique event types and 200+ entities related to data loss prevention, insider threats, and other critical security concerns, improving incident monitoring efficiency by 30%.",
+			"Optimized PostgreSQL database queries reducing response time by 25% through implementing indexing and caching strategies.",
+			"Developed RESTful APIs handling ~500 requests/second using Django, improving system integration efficiency by 35%.",
 		],
+		website: "https://www.rbcroyalbank.com/personal.html",
 	},
 	{
 		id: "2",
@@ -18,11 +20,13 @@ const workData = [
 		position: "Software Developer",
 		date: "Aug 2020 - Mar 2023",
 		description: [
-			"Built a high-performance CRM platform with Java and Spring Boot, supporting 15,000+ users and ~5000 transactions per second.",
-			"Reduced system latency by 35% by designing microservices architecture for payment processing systems.",
-			"Enhanced code quality metrics by 40% by resolving 300+ critical bugs using Sonar and improving overall system reliability.",
-			"Collaborated with cross-functional teams to integrate third-party APIs with a 99.9% success rate.",
+			"Engineered a high-performance CRM platform using Java and Spring Boot, handling 15,000+ concurrent users and ~5000 transactions per second.",
+			"Designed and implemented microservices architecture for the payment processing system, reducing system latency by 35%.",
+			"Spearheaded a bug resolution initiative using Sonar, eliminating 300+ critical issues and improving code quality metrics by 40%.",
+			"Developed an automated testing framework, reducing QA cycle time while maintaining 98% code coverage.",
+			"Integrated multiple third-party API requests with a 99.9% success rate.",
 		],
+		website: "https://www.amdocs.com/",
 	},
 	{
 		id: "3",
@@ -31,9 +35,11 @@ const workData = [
 		position: "Data Science Intern",
 		date: "Jan 2020 - Jun 2020",
 		description: [
-			"Improved data processing efficiency by 30% and reduced manual effort by 25% by developing automation scripts.",
-			"Participated in cross-departmental collaboration to streamline data analysis workflows.",
+			"Developed Python-based ETL pipeline, reducing processing time by 25% through optimized algorithms.",
+			"Engineered 4 automation scripts using Python and Pandas, implementing parallel processing to handle 1 million records with 93% accuracy.",
+			"Built REST API integration layer for ML models using Flask, enabling real-time data processing.",
 		],
+		website: "https://www.unilever.com/",
 	},
 ];
 

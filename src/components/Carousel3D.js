@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import Slider from "react-slick";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import "slick-carousel/slick/slick.css";
@@ -24,15 +23,12 @@ const CustomNextArrow = ({ onClick }) => (
 );
 
 const Carousel3D = ({ projects }) => {
-	const [currentSlide, setCurrentSlide] = useState(0);
-
 	const settings = {
 		infinite: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		speed: 500,
 		arrows: true,
-		beforeChange: (_, next) => setCurrentSlide(next),
 		prevArrow: <CustomPrevArrow />,
 		nextArrow: <CustomNextArrow />,
 		responsive: [

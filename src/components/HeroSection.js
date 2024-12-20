@@ -1,21 +1,15 @@
 import React from "react";
 import { motion } from "framer-motion";
-import profilePicture from "../assets/CartoonPicture.jpg";
-import TiltImage from "./TiltImage.js";
+import profilePicture from "../assets/ProfilePicture.jpeg";
+import UserImage from "./UserImage";
 
 const HeroSection = () => {
 	return (
-		<section className="flex flex-col items-center justify-center w-full md:flex-row gap-8 md:gap-12 lg:gap-16 px-4 sm:px-8">
-			{/* Cartoon Profile Picture */}
-			<TiltImage
-				src={profilePicture}
-				alt="Shivanshu Kapila"
-				className="w-32 h-32 md:w-48 md:h-48 lg:w-64 lg:h-64"
-			/>
+		<section className="flex flex-col items-center justify-center w-full gap-8 md:gap-0 lg:gap-0 px-4 sm:px-8">
+			<UserImage imageSrc={profilePicture} alt="Shivanshu Kapila" />
 
-			{/* Text Content */}
 			<div className="flex flex-col items-center md:items-start">
-				<div className="space-y-3 text-center md:text-left">
+				<div className="space-y-3 text-center md:text-center">
 					<h2 className="text-lg md:text-xl lg:text-2xl text-white">
 						Hi,
 					</h2>
@@ -34,8 +28,11 @@ const HeroSection = () => {
 							|
 						</motion.span>
 					</h1>
-					<p className="max-w-xs sm:max-w-sm md:max-w-md text-sm md:text-base lg:text-lg text-white tracking-wider">
-						Toronto, Canada-based Full Stack Developer.
+					<p className="flex flex-col max-w-xs sm:max-w-sm md:max-w-md text-sm md:text-base lg:text-lg text-white tracking-wider">
+						<span>Toronto, Canada-based</span>
+						<span className=" text-highlighted text-shadow-yellowShadow">
+							Full Stack Developer.
+						</span>
 					</p>
 				</div>
 			</div>

@@ -2,20 +2,29 @@ const educationData = [
 	{
 		id: "1",
 		title: "PG Diploma",
-		position: "Post Graduate Diploma",
 		company: "Lambton College",
+		position: "PG Diploma",
+		program: "Post Graduate Diploma in Full Stack Software Development",
 		date: "May 2023 - Dec 2024",
-		study: "Post Graduate Diploma in Full Stack Software Development",
-		description: ["Lambton College, Canada"],
+		description: [
+			"Focused on advanced concepts in web and software development, including Java, Python and JavaScript, along with frameworks like Spring Boot, Django, and React.",
+			"Gained hands-on experience in project management and cloud computing.",
+			"Enhanced proficiency in Agile methodologies, Git, and CI/CD practices.",
+		],
+		website: "https://www.lambtoncollege.ca/",
 	},
 	{
 		id: "2",
-		title: "B.Eng",
-		position: "Bachelor of Engineering",
-		company: "Thapar University",
+		title: "Bachelor of Engineering",
+		company: "Thapar Institute of Engineering and Technology",
+		position: "B.Eng",
+		program: "Bachelor of Engineering in Electronics and Computer",
 		date: "Aug 2016 - Jun 2020",
-		study: "Bachelor of Engineering in Electronics and Computer",
-		description: ["Thapar Institute of Engineering and Technology, India"],
+		description: [
+			"Studied core principles of computer science, software development, and electronics engineering.",
+			"Actively participated in coding hackathons and technical seminars, enhancing problem-solving skills.",
+		],
+		website: "https://www.thapar.edu/",
 	},
 ];
 
