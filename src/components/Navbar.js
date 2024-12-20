@@ -8,7 +8,7 @@ import { Link } from "react-scroll";
 const Navbar = () => {
 	return (
 		<nav className="bg-slate-gradient border-b-2 border-white fixed top-0 z-20 w-full">
-			<div className="flex flex-col items-center justify-between w-full px-4 py-4 md:flex-row md:px-20">
+			<div className="flex flex-col gap-4 items-center justify-between w-full px-4 py-4 md:flex-row md:px-20">
 				<Link
 					to="hero"
 					spy={true}

@@ -86,8 +86,8 @@ const ContentTabs = ({ data, isVisible }) => {
 					onAnimationComplete={() => setAnimationTriggered(true)}
 				>
 					<div className="flex flex-col md:items-start items-center">
-						<div className="text-2xl font-semibold mb-4">
-							{selectedData.position} @{" "}
+						<div className="flex flex-col items-center gap-2 text-2xl font-semibold mb-4 md:flex-row">
+							<div>{selectedData.position} @ </div>
 							<NavLink
 								to={selectedData.website}
 								target="_blank"
@@ -98,10 +98,10 @@ const ContentTabs = ({ data, isVisible }) => {
 							</NavLink>
 						</div>
 						<div className="flex gap-2 text-sm font-thin mb-4 italic opacity-70">
-							<SlCalender />
+							<SlCalender className="mt-[2px]" />
 							{selectedData.date}
 						</div>
-						<ul className="list-disc pl-5 text-base leading-relaxed text-gray-200 text-justify">
+						<ul className="list-square pl-5 text-base leading-relaxed text-gray-200 text-justify marker:text-highlighted">
 							{selectedData.description.map((item, index) => (
 								<li key={index}>{item}</li>
 							))}

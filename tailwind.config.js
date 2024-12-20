@@ -26,7 +26,14 @@ module.exports = {
 			},
 			textShadow: {
 				yellowShadow:
-					"0 0 1px #F59E0B, 0 0 2px #F59E0B, 0 0 1px #FCD34D", // Further reduced shadow intensity
+					"0 0 1px #F59E0B, 0 0 2px #F59E0B, 0 0 1px #FCD34D",
+			},
+			listStyleType: {
+				none: "none",
+				disc: "disc",
+				decimal: "decimal",
+				square: "square",
+				roman: "upper-roman",
 			},
 		},
 	},

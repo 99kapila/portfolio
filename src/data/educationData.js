@@ -16,7 +16,7 @@ const educationData = [
 	{
 		id: "2",
 		title: "Bachelor of Engineering",
-		company: "Thapar Institute of Engineering and Technology",
+		company: "Thapar University",
 		position: "B.Eng",
 		program: "Bachelor of Engineering in Electronics and Computer",
 		date: "Aug 2016 - Jun 2020",

@@ -98,7 +98,7 @@ export default function App() {
 					<div
 						id="skills"
 						ref={skillsRef}
-						className={`flex flex-col justify-center items-center mt-28 transition-opacity ease-in-out duration-700 ${
+						className={`flex flex-col justify-center items-center mt-0 md:mt-32 transition-opacity ease-in-out duration-700 ${
 							isSkillsVisible ? "opacity-100" : "opacity-0"
 						}`}
 					>

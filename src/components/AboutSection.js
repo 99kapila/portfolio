@@ -27,13 +27,13 @@ const AboutSection = ({ isVisible }) => {
 						}}
 						transition={{ duration: 1, ease: "easeInOut" }}
 					>
-						<p className="text-lg leading-relaxed text-justify">
+						<p className="text-lg text-justify">
 							I’m based in Toronto, Canada, and have over 3 years
 							of experience as a Full Stack Developer. While I
 							enjoy building software, life for me is about more
 							than just coding.
 						</p>
-						<p className="mt-4 text-lg leading-relaxed text-justify">
+						<p className="mt-4 text-lg text-justify">
 							I’m passionate about staying active and spend time
 							at the gym whenever I can. Chess is one of my
 							favorite ways to challenge my mind, and I love
@@ -41,7 +41,7 @@ const AboutSection = ({ isVisible }) => {
 							technology or everyday life. I believe in continuous
 							growth.
 						</p>
-						<p className="mt-4 text-lg leading-relaxed text-justify">
+						<p className="mt-4 text-lg text-justify">
 							Spending time with family and friends is a big part
 							of what keeps me grounded and happy. Whether it’s
 							sharing meals, celebrating milestones, or just
@@ -49,7 +49,7 @@ const AboutSection = ({ isVisible }) => {
 							connections that bring love and laughter into my
 							life.
 						</p>
-						<p className="mt-4 text-lg leading-relaxed text-justify">
+						<p className="mt-4 text-lg text-justify">
 							If you’d like to learn more about my professional
 							journey, feel free to check out my resume below.
 						</p>

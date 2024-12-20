@@ -10,10 +10,8 @@ const HeroSection = () => {
 
 			<div className="flex flex-col items-center md:items-start">
 				<div className="space-y-3 text-center md:text-center">
-					<h2 className="text-lg md:text-xl lg:text-2xl text-white">
-						Hi,
-					</h2>
-					<h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white">
+					<h2 className="text-xl text-white">Hi,</h2>
+					<h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white">
 						I'm Shivanshu Kapila
 						<motion.span
 							initial={{ opacity: 1 }}
@@ -28,7 +26,7 @@ const HeroSection = () => {
 							|
 						</motion.span>
 					</h1>
-					<p className="flex flex-col max-w-xs sm:max-w-sm md:max-w-md text-sm md:text-base lg:text-lg text-white tracking-wider">
+					<p className="flex flex-col max-w-xs sm:max-w-sm md:max-w-md text-xl text-white tracking-wider">
 						<span>Toronto, Canada-based</span>
 						<span className=" text-highlighted text-shadow-yellowShadow">
 							Full Stack Developer.
