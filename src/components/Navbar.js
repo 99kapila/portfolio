@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import EmailIcon from "@mui/icons-material/Email";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -6,6 +6,25 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
+	const [offset, setOffset] = useState(-100);
+
+	useEffect(() => {
+		const handleResize = () => {
+			if (window.innerWidth < 768) {
+				setOffset(-175); // Adjust for smaller screens
+			} else {
+				setOffset(-100); // Default offset for larger screens
+			}
+		};
+
+		handleResize(); // Set initial offset based on screen size
+		window.addEventListener("resize", handleResize); // Update offset on screen resize
+
+		return () => {
+			window.removeEventListener("resize", handleResize);
+		};
+	}, []);
+
 	return (
 		<nav className="bg-slate-gradient border-b-2 border-white fixed top-0 z-20 w-full">
 			<div className="flex flex-col gap-4 items-center justify-between w-full px-4 py-4 md:flex-row md:px-20">
@@ -13,7 +32,7 @@ const Navbar = () => {
 					to="hero"
 					spy={true}
 					smooth={true}
-					offset={-100}
+					offset={offset}
 					className="text-white text-xl font-bold cursor-pointer hover:font-normal hover:duration-500 hover:ease-in-out hover:text-highlighted hover:text-shadow-yellowShadow"
 				>
 					Shivanshu Kapila
@@ -23,7 +42,7 @@ const Navbar = () => {
 						to="about"
 						spy={true}
 						smooth={true}
-						offset={-100}
+						offset={offset}
 						className="text-white hover:font-normal cursor-pointer hover:duration-500 hover:ease-in-out hover:text-highlighted hover:text-shadow-yellowShadow"
 					>
 						About
@@ -32,7 +51,7 @@ const Navbar = () => {
 						to="experience"
 						spy={true}
 						smooth={true}
-						offset={-100}
+						offset={offset}
 						className="text-white hover:font-normal cursor-pointer hover:duration-500 hover:ease-in-out hover:text-highlighted hover:text-shadow-yellowShadow"
 					>
 						Experience
@@ -41,7 +60,7 @@ const Navbar = () => {
 						to="skills"
 						spy={true}
 						smooth={true}
-						offset={-100}
+						offset={offset}
 						className="text-white hover:font-normal cursor-pointer hover:duration-500 hover:ease-in-out hover:text-highlighted hover:text-shadow-yellowShadow"
 					>
 						Skills
@@ -50,7 +69,7 @@ const Navbar = () => {
 						to="contact"
 						spy={true}
 						smooth={true}
-						offset={-100}
+						offset={offset}
 						className="text-white hover:font-normal cursor-pointer hover:duration-500 hover:ease-in-out hover:text-highlighted hover:text-shadow-yellowShadow"
 					>
 						Contact
@@ -61,7 +80,7 @@ const Navbar = () => {
 						to="contact"
 						spy={true}
 						smooth={true}
-						offset={-100}
+						offset={offset}
 						className="text-white hover:font-normal cursor-pointer hover:duration-500 hover:ease-in-out hover:text-highlighted hover:text-shadow-yellowShadow"
 					>
 						<EmailIcon />
