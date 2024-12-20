@@ -9,7 +9,6 @@ import workData from "./data/workData";
 import educationData from "./data/educationData";
 import AboutSection from "./components/AboutSection";
 import SkillsSection from "./components/SkillsSection";
-import ProjectSection from "./components/ProjectSection";
 import FooterSection from "./components/FooterSection";
 import "@fontsource/quicksand";
 
