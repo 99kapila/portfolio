@@ -14,6 +14,7 @@ import PostmanLogo from "../assets/postman.svg";
 import GitHubLogo from "../assets/github.svg";
 import NodeJsLogo from "../assets/nodejs.svg";
 import { motion } from "framer-motion";
+import Resume from "../assets/ShivanshuKapila_SoftwareDeveloper_Resume.pdf";
 
 const SkillsSection = ({ isVisible }) => {
 	const [animationTriggered, setAnimationTriggered] = useState(false);
@@ -141,9 +142,9 @@ const SkillsSection = ({ isVisible }) => {
 						If you'd like to explore more about my technical
 						expertise and skills, feel free to{" "}
 						<a
-							href="/path/to/your/resume.pdf"
+							href={Resume}
 							className="text-highlighted text-shadow-yellowShadow"
-							download="Shivanshu_Kapila_Resume.pdf"
+							download="ShivanshuKapila_SoftwareDeveloper_Resume.pdf"
 						>
 							download my resume.
 						</a>

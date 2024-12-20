@@ -20,6 +20,7 @@ const workData = [
 		position: "Software Developer",
 		date: "Aug 2020 - Mar 2023",
 		description: [
+			"Led development of high-performance CRM platforms processing 2 million daily transactions with 99.9% uptime.",
 			"Engineered a high-performance CRM platform using Java and Spring Boot, handling 15,000+ concurrent users and ~5000 transactions per second.",
 			"Designed and implemented microservices architecture for the payment processing system, reducing system latency by 35%.",
 			"Spearheaded a bug resolution initiative using Sonar, eliminating 300+ critical issues and improving code quality metrics by 40%.",

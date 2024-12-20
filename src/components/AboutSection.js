@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import HeadingWithLine from "./HeadingWithLine";
-import Button from "./Button";
 import TextSnippetIcon from "@mui/icons-material/TextSnippet";
 
 const AboutSection = ({ isVisible }) => {
@@ -56,11 +55,15 @@ const AboutSection = ({ isVisible }) => {
 					</motion.div>
 
 					<div>
-						<Button
-							className="bg-button-gradient w-40 py-3 border-2 border-white text-white rounded-lg shadow-md mt-10"
-							buttonContent="Resume"
-							icon={TextSnippetIcon}
-						/>
+						<motion.a
+							href="/ShivanshuKapila_SoftwareDeveloper_Resume.pdf"
+							download="ShivanshuKapila_SoftwareDeveloper_Resume.pdf"
+							className="bg-button-gradient w-40 py-3 border-2 border-white text-white rounded-lg shadow-md mt-10 flex items-center justify-center"
+							whileHover={{ scale: 1.05 }}
+							whileTap={{ scale: 0.95 }}
+						>
+							<TextSnippetIcon className="mr-2" /> Resume
+						</motion.a>
 					</div>
 				</div>
 			</div>
